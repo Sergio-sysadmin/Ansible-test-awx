@@ -1,0 +1,10 @@
+---
+- name: Prueba Ansible GIT
+  hosts: node1
+
+  tasks:
+  - name: Creamos un fichero
+    file:
+      path: "/tmp/awx-prueba.txt"
+      state: touch
+
